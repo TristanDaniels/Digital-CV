@@ -1,0 +1,69 @@
+/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li.nav-link {
+  display: inline-block;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+nav#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  font-family: sans-serif;
+  font-size: large;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+}
+/* Landing styles */
+
+#landing {
+  background-image: url(Home.jpg);
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+#landing h1,
+#landing h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-shadow: 1px 4px 8px black;
+}
+
+.image {
+  width: 50%;
+}
+/* Section styles */
+section {
+  min-height: 100vh;
+}
+section:nth-of-type(even) {
+  background-color: grey;
+}
+
+label.label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+}
+#about {
+  display: flex;
+  padding: 10px solid;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
