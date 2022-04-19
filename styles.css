@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
 }
 
+/* Navbar */
 li.nav-link {
   display: inline-block;
 }
@@ -15,6 +16,7 @@ li.nav-link {
   text-decoration: none;
   padding: 5px;
 }
+
 nav#navbar {
   position: fixed;
   width: 100%;
@@ -25,8 +27,9 @@ nav#navbar {
   flex-direction: row-reverse;
   background-color: white;
 }
-/* Landing styles */
+/* End of Navbar */
 
+/* Landing styles */
 #landing {
   background-image: url(Home.jpg);
   background-size: 100% auto;
@@ -36,6 +39,7 @@ nav#navbar {
   flex-direction: column;
   align-content: center;
 }
+
 #landing h1,
 #landing h2 {
   color: white;
@@ -44,9 +48,6 @@ nav#navbar {
   text-shadow: 1px 4px 8px black;
 }
 
-.image {
-  width: 50%;
-}
 /* Section styles */
 section {
   min-height: 100vh;
@@ -55,15 +56,75 @@ section:nth-of-type(even) {
   background-color: grey;
 }
 
-label.label {
-  display: flex;
-  flex-direction: column;
+/* About */
+.image {
   width: 50%;
-  padding: 10px;
 }
 #about {
   display: flex;
   padding: 10px solid;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#about h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.content {
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* End of about */
+
+/* SKills page */
+#skills {
+  min-height: 20vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #14213d;
+}
+#skills > h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 29%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 1px 1px 8px black;
+  margin-top: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+i {
+  font-size: 2rem;
+}
+/* End of skills page */
+
+/* Contact page */
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  color: white;
 }
