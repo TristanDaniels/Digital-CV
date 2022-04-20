@@ -99,7 +99,7 @@ section:nth-of-type(even) {
 /* End of about */
 
 /* SKills page */
-#skills {
+#services {
   min-height: 20vh;
   display: flex;
   align-content: center;
@@ -109,12 +109,12 @@ section:nth-of-type(even) {
   align-items: center;
   color: black;
 }
-#skills > h2 {
+#services > h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: sans-serif;
 }
-.skills-container {
+.services-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
