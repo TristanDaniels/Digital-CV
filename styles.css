@@ -40,6 +40,7 @@ nav#navbar {
 #landing {
   background-image: url(Home.jpg);
   background-size: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ nav#navbar {
 
 /* Section styles */
 section {
-  min-height: 100vh;
+  min-height: fit-content;
   padding: 40px;
 }
 section:nth-of-type(even) {
@@ -72,10 +73,10 @@ section:nth-of-type(even) {
 
 /* About */
 .image-container {
-  width: 100%;
+  width: 50%;
 }
 .image {
-  width: 75%;
+  width: 50%;
 }
 .about-text {
   width: 100%;
@@ -102,6 +103,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  font-family: sans-serif;
 }
 #about h2 {
   padding-bottom: 20px;
@@ -222,6 +224,43 @@ i {
   color: purple;
 }
 /* End of project page */
+
+/* Testimonials */
+#testimonials h2 {
+  color: white;
+  padding-bottom: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  background: grey;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 20px;
+  color: black;
+}
+/* End of testimonials */
 
 /* Contact page */
 #contact {
