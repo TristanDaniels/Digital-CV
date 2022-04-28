@@ -327,9 +327,6 @@ body {
   }
 }
 @media screen and (max-width: 550px) {
-  .link {
-    display: none;
-  }
   #contact {
     display: flex;
     flex-direction: column;
