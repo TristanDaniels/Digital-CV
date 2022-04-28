@@ -5,37 +5,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-/* Navbar */
-li.nav-link {
-  display: inline-block;
-}
-
-.link {
-  color: black;
-  text-decoration: none;
-  padding: 5px;
-}
-
-nav#navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  font-family: sans-serif;
-  font-size: large;
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: white;
-  padding-right: 10px;
-}
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  display: none;
-}
-/* End of Navbar */
-
 /* Landing styles */
 #landing {
   background-image: url(Home.jpg);
@@ -64,7 +33,7 @@ nav#navbar {
 /* Section styles */
 section {
   min-height: fit-content;
-  padding: 40px;
+  padding: 80px;
 }
 section:nth-of-type(even) {
   background-color: grey;
@@ -169,12 +138,13 @@ ul {
   flex-wrap: wrap;
 }
 .card {
+  color: black;
   width: 25%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 1px 1px 8px white;
+  box-shadow: 1px 1px 8px black;
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
@@ -359,9 +329,6 @@ body {
 @media screen and (max-width: 550px) {
   .link {
     display: none;
-  }
-  .button {
-    display: block;
   }
   #contact {
     display: flex;
