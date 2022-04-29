@@ -35,34 +35,7 @@ section {
   min-height: fit-content;
   padding: 80px;
 }
-section:nth-of-type(even) {
-  background-color: grey;
-}
 /* End of section styles */
-/* Resume */
-#resume {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-#resume h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: sans-serif;
-  padding-bottom: 20px;
-}
-#resume p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: sans-serif;
-  padding-bottom: 20px;
-}
-/* End of resume */
-
 /* Services page */
 #services {
   min-height: 20vh;
@@ -168,49 +141,20 @@ i {
 }
 /* End of project page */
 
-/* Testimonials */
-#testimonials h2 {
-  color: white;
-  padding-bottom: 20px;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-.carousel {
-  background: grey;
-}
-
-.carousel-cell {
+/* Modal */
+.modal-body {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
 }
-.testimonial-images {
-  width: 20%;
-  height: 70%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* End of Modal */
+/*Start of Testimonial page*/
+#testimonials {
+  background-image: url("./Background\ image.jpg");
+  background: linear-gradient(blue);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-.testimonials-text {
-  color: white;
-}
-.testimonial-container {
-  display: flex;
-  flex-direction: column;
-}
-/* End of testimonials */
-
+/* End of Testimonial page */
 /* Contact page */
 #contact {
   display: flex;

@@ -74,8 +74,9 @@
       <h1>I'm Tristan Daniels</h1>
       <h2>Aspiring web developer</h2>
     </section>
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route p-3 mb-2 bg-light text-black">
+    <!-- End of Landing page -->
+    <!-- About Section -->
+    <section id="about" class="about-mf sect-pt4 route p-3 mb-2 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -87,12 +88,12 @@
                       <div class="about-img">
                         <img
                           src="Tristan.JPG"
-                          class="img-fluid rounded b-shadow-a mt-5"
+                          class="img-fluid rounded b-shadow-a mt-5" style="height: 200px; width: 150px;"
                           alt="Picture of me"
                         />
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-7 h-100 d-flex justify-content-between">
+                    <div class="col-sm-6 col-md-7 h-100">
                       <div class="about-info mt-5">
                         <p>
                           <span class="title-s fw-bold">Name: </span>
@@ -164,7 +165,7 @@
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0 mt-5">
                     <div class="title-box-2">
-                      <h4 class="title-left fw-bold mb-4">About me</h4>
+                      <h2 class="title-left fw-bold mb-4">About me</h2>
                     </div>
                     <p class="lead">
                       Curabitur non nulla sit amet nisl tempus convallis quis ac
@@ -194,14 +195,73 @@
       </div>
     </section>
     <!-- End About Section -->
-    <section id="resume">
-      <h2>Work experience</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, laboriosam praesentium perspiciatis ullam, repudiandae ex voluptates vero non ratione aliquid sunt illum accusamus itaque. Amet optio voluptate itaque porro tempora.</p>
-      <h2>Education</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, exercitationem quae, nostrum magni fuga tenetur doloremque sapiente voluptate dolore temporibus porro nobis. Nulla, fugit placeat veniam ratione in labore facere.</p>
-      <h2>Language</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam inventore sequi ratione illum, et explicabo quidem dolores neque maiores aperiam rem optio voluptatum, eveniet ducimus minima corporis repellendus unde.</p>
-    </section>
+    <!-- Start of Resume Section -->
+    <section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+      <div class="headings">
+        <h2>Resume</h2> </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4>Tristan Daniels</h4>
+            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque corporis deleniti ea ipsam repellendus facere molestias quis, fugiat numquam nihil quod hic, placeat unde ullam impedit laboriosam? Quis, voluptatem?</em></p>
+            <p>
+            <ul>
+              <li>Western Cape, South Africa</li>
+              <li>065 863 4549</li>
+              <li>tristandaniels07@gmail.com</li>
+            </ul>
+            </p>
+          </div>
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Matric Bachelors Pass</h4>
+            <h5>2017 - 2021</h5>
+            <p><em>Pinelands High</em></p>
+            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+          </div>
+          <div class="resume-item">
+            <h4>Aspiring Fullstack Developer </h4>
+            <h5>2022 - Present</h5>
+            <p><em>Life Choices Academy</em></p>
+            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item mt-9">
+            <h4>IT Technician Learnership</h4>
+            <h5>2021-2022</h5>
+            <p><em>Pointer SA</em></p>
+            <p>
+            <ul>
+              <li>Using MySql to create a database of software on employees computers</li>
+              <li>Assembling of various products used in vehicle tracking devices</li>
+              <li>Recording and packaging stock for companies that work with Pointer SA</li>
+              <li></li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Graphic design specialist</h4>
+            <h5>2017 - 2018</h5>
+            <p><em>Stepping Stone Advertising, New York, NY</em></p>
+            <p>
+            <ul>
+              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Resume Section -->
+  <!-- Start of Services page -->
     <section id="services">
       <h2>Services</h2>
       <div class="services-container">
@@ -237,41 +297,192 @@
         </div>
       </div>
     </section>
+    <!-- End of Services page -->
+    <!-- Start of Project page -->
     <section id="projects">
        <h2>Projects</h2>
       <div class="project-container">
         <div class="template">
-          <img src="Project 1.jpg" alt="Project 1" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project1" src="Project 1.jpg" alt="Project 1" class="project">
         </div>
         <div class="template">
-          <img src="Project 2.jpg" alt="Project 2" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project2" src="Project 2.jpg" alt="Project 2" class="project">
         </div>
         <div class="template">
-          <img src="Project 3.jpg" alt="Project 3" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project3" src="Project 3.jpg" alt="Project 3" class="project">
         </div>
         <div class="template">
-          <img src="Project 4.jpg" alt="Project 4" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project4" src="Project 4.jpg" alt="Project 4" class="project">
         </div>
         <div class="template">
-          <img src="Project 5.jpg" alt="Project 5" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project5" src="Project 5.jpg" alt="Project 5" class="project">
         </div>
         <div class="template">
-          <img src="Project 6.jpg" alt="Project 6" class="project">
+          <img data-bs-toggle="modal" data-bs-target="#project6" src="Project 6.jpg" alt="Project 6" class="project">
         </div>
       </div>
-    </section>
-    <section id="testimonials">
-   <div class="heading"><h2>Testimonials</h2></div>
-   <div class="testimonial-container">
-<div class="carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="carousel-cell"><img src="Man 1.jpg" alt="Jonas" class="testimonial-images">
-  <p class="testimonials-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorum assumenda nisi et, facere reiciendis eum."</p></div>
-  <div class="carousel-cell"><img src="Man 2.jpg" alt="Nick" class="testimonial-images"><p class="testimonials-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</p></div>
-  <div class="carousel-cell"><img src="Woman 1.jpg" alt="Kelly" class="testimonial-images"><p class="testimonials-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</p></div>
+      </section>
+      <!-- End of Project page -->
+
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 1.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 2.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
-    </section>
+
+<div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 3.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project4">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 4.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project5">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 5.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project6">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Project 6.jpg" class="img-fluid me-3" style="width: 50%;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, doloremque suscipit, quod rem error, quas excepturi ratione vero dolorem maiores mollitia similique! Natus doloremque eos suscipit ex aspernatur iste sequi quidem accusamus expedita fugit porro impedit a inventore, delectus quasi! Id fugiat ab nam praesentium consequatur sint ipsum assumenda.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+
+      <!--Start of Testimonial page -->
+      <section id="testimonials" class="py-5">
+        <div class="container text-center">
+          <h2 class="mb-5 text-white">Testimonials</h2>
+        </div>
+    <div id="testimonial-slider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="0" class="active round-circle" style="width:20px; height: 20px" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="1" class="round-circle" style="width:20px; height: 20px" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#testimonial-slider" data-bs-slide-to="2" class="round-circle" style="width:20px; height: 20px" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item pb-5 text-center active">
+      <img src="Man 1.jpg" class="rounded-circle mb-5" alt="Person 1" style="height: 30%;width: 30%;"> 
+      <h5 class="text-white">First slide label</h5>
+      <p class="text-white">Some representative placeholder content for the first slide.</p>
+      
+    </div>
+    <div class="carousel-item pb-5 text-center">
+      <img src="Man 3.jpg" class="rounded-circle mb-5" alt="Person 2" style="height: 30%;width: 30%;">
+      <h5 class="text-white">Second slide label</h5>
+      <p class="text-white">Some representative placeholder content for the second slide.</p>
+      
+    </div>
+    <div class="carousel-item pb-5 text-center">
+      <img src="Man 2.jpg" class="rounded-circle mb-5" alt="Person 3" style="height: 30%;width: 30%;">
+        <h5 class="text-white">Third slide label</h5>
+        <p class="text-white">Some representative placeholder content for the third slide.</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<!-- End of Testimonial page -->
+<!-- Start of Contact page -->
     <section id="contact">
       <div class="form">
         <h2>Contact me</h2>
@@ -326,6 +537,7 @@
         </ul>
       </div>
     </section>
+    <!-- End of Contact page -->
     <!-- Scripts -->
     <script
       src="https://kit.fontawesome.com/085b04c228.js"
