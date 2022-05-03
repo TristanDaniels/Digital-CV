@@ -9,12 +9,14 @@
 #landing {
   background-image: url(Home.jpg);
   background-size: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-content: center;
+  background-repeat: no-repeat;
 }
 
 #landing h1,
@@ -38,20 +40,18 @@ section {
 /* End of section styles */
 /* Services page */
 #services {
-  min-height: 20vh;
   display: flex;
   align-content: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   align-items: center;
-  color: white;
 }
-#services > h2 {
+/* #services > h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: sans-serif;
-}
+} */
 .services-container {
   display: flex;
   flex-direction: row;
@@ -79,6 +79,7 @@ section {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 .card p {
   font-family: sans-serif;
@@ -98,7 +99,6 @@ i {
 
 /* Start of project page */
 #projects {
-  min-height: 20vh;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -120,17 +120,11 @@ i {
   flex-wrap: wrap;
 }
 .template {
-  width: 25%;
+  width: 33%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 1px 1px 8px black;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  text-align: center;
 }
 .project {
   width: 100%;
@@ -144,12 +138,12 @@ i {
 /* Modal */
 .modal-body {
   display: flex;
+  flex-direction: column;
 }
 /* End of Modal */
 /*Start of Testimonial page*/
 #testimonials {
   background-image: url("./Background\ image.jpg");
-  background: linear-gradient(blue);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -206,6 +200,11 @@ i {
   align-items: flex-end;
   margin-top: 20px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 /* End of contact page */
 /* Media queries */
 /* widths ordered from largest to smallest */
@@ -217,8 +216,6 @@ i {
   .image {
     width: 100%;
   }
-}
-@media screen and (max-width: 550px) {
   #contact {
     display: flex;
     flex-direction: column;
@@ -238,11 +235,26 @@ i {
   .services-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-left: -40px;
   }
   .card {
-    width: 85%;
+    width: 100%;
   }
   .card p {
     text-align: left;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .template {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
