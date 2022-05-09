@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -77,7 +74,7 @@
     <!-- End of Landing page -->
     <!-- About Section -->
     <section id="about" class="about-mf sect-pt4 route p-3 mb-2 bg-light">
-      <div class="container">
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="box-shadow-full">
@@ -179,11 +176,12 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </section>
     <!-- End About Section -->
     <!-- Start of Resume Section -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume" data-aos="fade-right"
+     data-aos-offset="500">
     <div class="container" data-aos="fade-up">
       <div class="headings">
         <h2>Resume</h2> </div>
@@ -391,7 +389,7 @@
       <diV class="communication">
         <ul>
           <li>Cape Town</li>
-          <li>065 863 4549</li>
+          <li>+27 65 863 4549</li>
           <li>tristandaniels07@gmail.com</li>
         </ul>
       </diV>
@@ -411,8 +409,12 @@
       </div>
     </section>
     <!-- End of Contact page -->
-    <footer> </footer>
+    <footer></footer>
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script
       src="https://kit.fontawesome.com/085b04c228.js"
       crossorigin="anonymous"
