@@ -213,9 +213,6 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  .image {
-    width: 100%;
-  }
   #contact {
     display: flex;
     flex-direction: column;
