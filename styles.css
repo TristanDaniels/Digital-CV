@@ -59,14 +59,12 @@ section {
   color: black;
   width: 25%;
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 1px 1px 8px black;
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
   text-align: center;
 }
 .card h4 {
@@ -118,7 +116,6 @@ i {
 .template {
   width: 33%;
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -143,6 +140,11 @@ i {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+.car-img {
+  height: 200px;
+  width: 175px;
+  border-radius: 50px;
 }
 /* End of Testimonial page */
 /* Contact page */
