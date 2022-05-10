@@ -208,6 +208,17 @@ ul {
   padding: 10px;
 }
 /* End of contact page */
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
 /* Media queries */
 /* widths ordered from largest to smallest */
 @media screen and (max-width: 700px) {
